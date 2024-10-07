@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.quickOpenNavigatePreviousInViewPicker"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-extension.vim_winCtrlQ",
+        "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]

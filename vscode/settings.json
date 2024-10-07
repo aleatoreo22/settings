@@ -1,0 +1,93 @@
+{
+    "vim.smartRelativeLine": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "explorer.autoReveal": true,
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#000000",
+      "editor.background": "#000000",
+      "sideBar.background": "#000000",
+      "sideBar.border": "#000000",
+      "titleBar.activeBackground": "#000000",
+      "titleBar.border": "#000000",
+      "statusBar.noFolderBackground": "#000000",
+      "statusBar.noFolderBorder": "#000000",
+      "statusBar.background": "#000000",
+      "statusBar.border": "#000000"
+    },
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "editor.fontFamily": "Cascadia Code",
+    "editor.lineHeight": 1.7,
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.settings.applyToAllProfiles": [
+      "editor.fontFamily"
+    ],
+    "terminal.integrated.fontFamily": "monospace",
+    "apc.electron": {
+      "titleBarStyle": "hiddenInset"
+    },
+    "apc.stylesheet": {
+      ".title-label > h2": "display: none",
+      ".window-title": "display: none",
+      ".decorationsOverviewRuler": "max-width : 0px"
+    },
+    "apc.font.family": "Cascadia Code",
+    "window.titleBarStyle": "native",
+    "symbols.hidesExplorerArrows": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": false,
+    "window.customTitleBarVisibility": "auto",
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "editor.inlineSuggest.enabled": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "vim.handleKeys": {
+      "<C-p>": false,
+      "<C-w>": false,
+      "<C-d>": false,
+      "<C-o>": false,
+      "<C-q>": false,
+      "<C-k>": false,
+      "<C-b": false
+    },
+    "workbench.activityBar.location": "hidden",
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.colorTheme": "Darcula",
+    "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+    ],
+    "workbench.iconTheme": "symbols",
+    "cmake.options.statusBarVisibility": "visible",
+    "telemetry.telemetryLevel": "off",
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "editor.experimentalInlineEdit.enabled": true,
+    "editor.inlineCompletionsAccessibilityVerbose": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.rulers": [
+      120
+    ],
+    "separators.classes.borderStyle": "dashed",
+    "separators.constructors.borderStyle": "dashed",
+    "separators.enums.borderStyle": "dashed",
+    "separators.functions.borderStyle": "dashed",
+    "separators.interfaces.borderStyle": "dashed",
+    "separators.methods.borderStyle": "dashed",
+    "separators.namespaces.borderStyle": "dashed",
+    "separators.structs.borderStyle": "dashed",
+  }
