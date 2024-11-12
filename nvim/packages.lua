@@ -1,4 +1,5 @@
 require('packer').startup(function(use)
+    use 'kyazdani42/nvim-web-devicons'
     use 'wbthomason/packer.nvim' -- Gerenciador de plugins
     use 'doums/darcula'          -- Plugin do tema Darcula
     use 'wbthomason/packer.nvim' -- Gerenciador de plugins
@@ -25,4 +26,5 @@ require('packer').startup(function(use)
             require("nvim-surround").setup({})
         end
     }
+    use "puremourning/vimspector"
 end)

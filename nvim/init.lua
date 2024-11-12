@@ -56,3 +56,5 @@ vim.cmd([[
   highlight! CmpItemKindMethod guifg=#C586C0 guibg=NONE
   highlight! CmpItemKindKeyword guifg=#D4D4D4 guibg=NONE
 ]])
+require('nvim-web-devicons').setup()
+

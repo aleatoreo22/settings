@@ -18,4 +18,12 @@ vim.api.nvim_set_keymap("v", "{", "<Esc>`<i{<Esc>`>a}<Esc>", { noremap = true, s
 vim.api.nvim_set_keymap("v", "(", "<Esc>`<i(<Esc>`>a)<Esc>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "[", "<Esc>`<i[<Esc>`>a]<Esc>", { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<F5>', ':call vimspector#Launch()<CR>', {})
+vim.api.nvim_set_keymap('n', '<F9>', ':call vimspector#ToggleBreakpoint()<CR>', {})
+vim.api.nvim_set_keymap('n', '<F10>', ':call vimspector#StepOver()<CR>', {})
+vim.api.nvim_set_keymap('n', '<F11>', ':call vimspector#StepInto()<CR>', {})
+vim.api.nvim_set_keymap('n', '<F12>', ':call vimspector#StepOut()<CR>', {})
+
+vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>Y', 'gg"+yG', { noremap = true, silent = true })
 
