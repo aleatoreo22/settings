@@ -31,5 +31,13 @@
         "key": "ctrl+shift+a",
         "command": "-editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "continue.focusEditWithoutClear"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-continue.focusEditWithoutClear"
     }
 ]

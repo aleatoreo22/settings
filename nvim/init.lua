@@ -4,7 +4,7 @@ local script_dir = debug.getinfo(1, "S").source:match("@(.*[\\/])") or "./"
 -- Adiciona o diretório do script ao package.path
 package.path = script_dir .. "?.lua;" .. package.path
 
-require("./packages")
+require("packages")
 require("keymap")
 require("autocomplete")
 require("languageserver")
@@ -57,4 +57,10 @@ vim.cmd([[
   highlight! CmpItemKindKeyword guifg=#D4D4D4 guibg=NONE
 ]])
 require('nvim-web-devicons').setup()
+
+vim.filetype.add({
+  extension = {
+    svelte = "svelte",
+  },
+})
 

@@ -1,5 +1,6 @@
 require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
+    use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim' -- Gerenciador de plugins
     use 'doums/darcula'          -- Plugin do tema Darcula
     use 'wbthomason/packer.nvim' -- Gerenciador de plugins
@@ -11,6 +12,8 @@ require('packer').startup(function(use)
     use 'hrsh7th/cmp-cmdline'    -- Autocompletar para a linha de comando
     use 'hrsh7th/cmp-nvim-lua'   -- Autocompletar para Lua
     use 'hrsh7th/cmp-nvim-lsp'   -- Autocompletar para LSP
+    use 'hrsh7th/cmp-vsnip'      -- Para snippets opcionais
+    use 'hrsh7th/vim-vsnip'
     use 'mg979/vim-visual-multi' -- Multi Cursor
     use 'junegunn/fzf'           --Search bar arquivo
     use 'junegunn/fzf.vim'       --Search bar arquivo
@@ -27,4 +30,8 @@ require('packer').startup(function(use)
         end
     }
     use "puremourning/vimspector"
+    use 'evanleck/vim-svelte'
+    use 'pangloss/vim-javascript'
+    use 'othree/html5.vim'
+    use 'Jezda1337/cmp_bootstrap'
 end)
