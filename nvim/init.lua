@@ -22,14 +22,14 @@ vim.o.smartindent = true -- Habilita indentação inteligente
 require('nvim-autopairs').setup {}
 
 -- Aplica o tema
-vim.cmd('colorscheme darcula')
+vim.cmd.colorscheme "catppuccin-mocha"
 
 -- Salvar automaticamente ao sair do modo de inserção
-vim.api.nvim_create_autocmd("InsertLeave", {
-    callback = function()
-        vim.cmd("update")
-    end
-})
+-- vim.api.nvim_create_autocmd("InsertLeave", {
+--     callback = function()
+--         vim.cmd("update")
+--     end
+-- })
 
 -- Salvar automaticamente ao mudar de buffer
 vim.api.nvim_create_autocmd("BufLeave", {

@@ -1,5 +1,28 @@
+-- Configuracao Treesitter
+require('nvim-treesitter.configs').setup {
+    ensure_installed = { "go", "lua", "javascript", "html", "css", "json", "svelte" }, -- Linguagens desejadas
+    sync_install = false,                                                              -- Instalação síncrona ou assíncrona
+    auto_install = true,                                                               -- Instalar linguagens automaticamente
+    ignore_install = {},                                                               -- Lista de linguagens a ignorar (deixe vazio se nenhuma)
+    modules = {},                                                                      -- Configuração para módulos adicionais (deixe vazio se não souber)
+    highlight = {
+        enable = true,                                                                 -- Ativar realce de sintaxe
+        additional_vim_regex_highlighting = false,                                     -- Evitar conflitos com o Vim padrão
+    },
+    indent = {
+        enable = true, -- Ativar indentação inteligente
+    },
+}
+
+
 -- Configuração do LSP para Go
 require 'lspconfig'.gopls.setup {}
+
+require('go').setup {
+    lsp_cfg = true, -- Usa configurações padrão do LSP
+    lsp_on_attach = true,
+}
+
 
 -- Configuração do LSP para C#
 require 'lspconfig'.omnisharp.setup {
@@ -76,7 +99,6 @@ lspconfig.cssls.setup({
 })
 
 lspconfig.html.setup({
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
-  filetypes = { "html", "svelte" }, -- Adiciona suporte para Svelte
+    capabilities = require('cmp_nvim_lsp').default_capabilities(),
+    filetypes = { "html", "svelte" }, -- Adiciona suporte para Svelte
 })
-

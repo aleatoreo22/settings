@@ -2,11 +2,9 @@ require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim' -- Gerenciador de plugins
-    use 'doums/darcula'          -- Plugin do tema Darcula
-    use 'wbthomason/packer.nvim' -- Gerenciador de plugins
     use 'doums/darcula'          -- Tema Darcula
+    use { "catppuccin/nvim", as = "catppuccin" }
     use 'hrsh7th/nvim-cmp'       -- Autocompletar
-    use 'hrsh7th/cmp-nvim-lsp'   -- Fontes de autocompletar para LSP
     use 'hrsh7th/cmp-buffer'     -- Autocompletar baseado no buffer
     use 'hrsh7th/cmp-path'       -- Autocompletar para caminhos de arquivos
     use 'hrsh7th/cmp-cmdline'    -- Autocompletar para a linha de comando
@@ -34,4 +32,6 @@ require('packer').startup(function(use)
     use 'pangloss/vim-javascript'
     use 'othree/html5.vim'
     use 'Jezda1337/cmp_bootstrap'
+    use 'ray-x/go.nvim'
+	use 'nvim-treesitter/nvim-treesitter'
 end)

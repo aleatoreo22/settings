@@ -9,7 +9,7 @@
     "titleBar.activeBackground": "#000000",
     "titleBar.inactiveBackground": "#000000",
     "titleBar.border": "#000000",
-    "statusBar.noFolderBackground": "#000000",
+    "statusBar.noFolderBackground": "#000001",
     "statusBar.noFolderBorder": "#000000",
     "statusBar.background": "#000000",
     "statusBar.border": "#000000",
@@ -100,5 +100,5 @@
   },
   "github.copilot.chat.followUps": "never",
   "github.copilot.chat.terminalChatLocation": "terminal",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
 }
