@@ -2,34 +2,35 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "explorer.autoReveal": true,
   "workbench.colorCustomizations": {
-    "activityBar.background": "#000000",
-    "editor.background": "#000000",
-    "sideBar.background": "#000000",
-    "sideBar.border": "#000000",
-    "titleBar.activeBackground": "#000000",
-    "titleBar.inactiveBackground": "#000000",
-    "titleBar.border": "#000000",
-    "statusBar.noFolderBackground": "#000001",
-    "statusBar.noFolderBorder": "#000000",
-    "statusBar.background": "#000000",
-    "statusBar.border": "#000000",
-    "terminal.background": "#000000",
-    "editorGroupHeader.tabsBackground": "#000000",
-    "tab.activeBackground": "#000000",
-    "tab.inactiveBackground": "#000000",
-    "tab.border": "#000000",
-    "breadcrumb.background": "#000000",
-    "editorGroupHeader.background": "#000000",
-    "panel.background": "#000000",
-    "editorGroup.border": "#000000",
-    "editorGutter.background": "#000000",
-    "welcomePage.background": "#000000",
-    "editor.emptySelectionBackground": "#000000"
+    // "activityBar.background": "#000000",
+    // "editor.background": "#000000",
+    // "sideBar.background": "#000000",
+    // "sideBar.border": "#000000",
+    // "titleBar.activeBackground": "#000000",
+    // "titleBar.inactiveBackground": "#000000",
+    // "titleBar.border": "#000000",
+    // "statusBar.noFolderBackground": "#000001",
+    // "statusBar.noFolderBorder": "#000000",
+    // "statusBar.background": "#000000",
+    // "statusBar.border": "#000000",
+    // "terminal.background": "#000000",
+    // "editorGroupHeader.tabsBackground": "#000000",
+    // "tab.activeBackground": "#000000",
+    // "tab.inactiveBackground": "#000000",
+    // "tab.border": "#000000",
+    // "breadcrumb.background": "#000000",
+    // "editorGroupHeader.background": "#000000",
+    // "panel.background": "#000000",
+    // "editorGroup.border": "#000000",
+    // "editorGutter.background": "#000000",
+    // "welcomePage.background": "#000000",
+    // "editor.emptySelectionBackground": "#000000"
   },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
-  "editor.fontFamily": "Cascadia Code NF",
-  "editor.fontSize": 15,
+  "editor.fontFamily": "Monaspace Xenon Frozen",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
   "editor.lineHeight": 1.7,
   "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": true,
@@ -37,19 +38,12 @@
   "editor.semanticHighlighting.enabled": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
-  "workbench.settings.applyToAllProfiles": [
-    "editor.fontFamily"
-  ],
-  "terminal.integrated.fontFamily": "Cascadia Code NF",
+  "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
+  "terminal.integrated.fontFamily": "Monaspace Xenon Frozen",
   "apc.electron": {
     "titleBarStyle": "hiddenInset"
   },
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".window-title": "display: none",
-    ".decorationsOverviewRuler": "max-width : 0px"
-  },
-  "apc.font.family": "Cascadia Code NF",
+  "apc.font.family": "Monaspace Xenon Frozen",
   "window.titleBarStyle": "native",
   "symbols.hidesExplorerArrows": false,
   "window.menuBarVisibility": "toggle",
@@ -60,7 +54,6 @@
   "editor.minimap.enabled": false,
   "window.customTitleBarVisibility": "auto",
   "breadcrumbs.enabled": false,
-  "workbench.editor.showTabs": "none",
   "editor.inlineSuggest.enabled": true,
   "emmet.triggerExpansionOnTab": true,
   "editor.quickSuggestions": {
@@ -70,35 +63,51 @@
   "git.openRepositoryInParentFolders": "always",
   "workbench.activityBar.location": "hidden",
   "go.toolsManagement.autoUpdate": true,
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "workbench.iconTheme": "catppuccin-macchiato",
-  "cmake.options.statusBarVisibility": "visible",
+  "workbench.iconTheme": "symbols",
   "telemetry.telemetryLevel": "off",
   "dotnetAcquisitionExtension.enableTelemetry": false,
-  "editor.experimentalInlineEdit.enabled": true,
   "editor.inlineCompletionsAccessibilityVerbose": true,
   "editor.inlineSuggest.suppressSuggestions": true,
   "debug.allowBreakpointsEverywhere": true,
-  "editor.rulers": [
-    120
-  ],
-  "separators.classes.borderStyle": "dashed",
-  "separators.constructors.borderStyle": "dashed",
-  "separators.enums.borderStyle": "dashed",
-  "separators.functions.borderStyle": "dashed",
-  "separators.interfaces.borderStyle": "dashed",
-  "separators.methods.borderStyle": "dashed",
-  "separators.namespaces.borderStyle": "dashed",
-  "separators.structs.borderStyle": "dashed",
-  "workbench.colorTheme": "Catppuccin Macchiato",
+  "editor.rulers": [120],
+  "workbench.colorTheme": "Catppuccin Mocha",
   "svelte.enable-ts-plugin": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "github.copilot.chat.followUps": "never",
-  "github.copilot.chat.terminalChatLocation": "terminal",
   "explorer.confirmDelete": false,
+  "vim.useSystemClipboard": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.smartRelativeLine": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
+  },
+  "background.enabled": true,
+  "background.fullscreen": {
+    "images": [
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c82942d6-8b71-4db5-8777-bb80cebbe6a0/dascg7l-7eee85fe-602e-415f-852c-fabca30ce498.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4Mjk0MmQ2LThiNzEtNGRiNS04Nzc3LWJiODBjZWJiZTZhMFwvZGFzY2c3bC03ZWVlODVmZS02MDJlLTQxNWYtODUyYy1mYWJjYTMwY2U0OTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.o0SAVdDIS8oG8kK8-JSzQC99YBwQTIYPCtflCh2055s"
+    ],
+    "opacity": 0.2,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  }
 }
